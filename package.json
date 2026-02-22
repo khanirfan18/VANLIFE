@@ -1,6 +1,7 @@
 {
   "name": "vanlife",
   "description": "A React-based van rental marketplace with BaaS integration",
+  "type": "module",
   "scripts": {
     "start": "vite",
     "dev": "vite",
@@ -8,15 +9,15 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "firebase": "^10.7.0",
     "miragejs": "0.1.46",
     "react": "^18.2.0",
     "react-dom": "18.2.0",
     "react-icons": "4.7.1",
-    "react-router-dom": "^6.4.3",
-    "router": "^2.2.0",
-    "vite": "latest"
+    "react-router-dom": "^6.4.3"
   },
   "devDependencies": {
-    "@vitejs/plugin-react": "*"
+    "@vitejs/plugin-react": "*",
+    "vite": "^5.0.0"
   }
 }

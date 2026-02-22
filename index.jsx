@@ -19,7 +19,10 @@ import Layout from "./components/Layout"
 import HostLayout from "./components/HostLayout"
 import AuthRequired from "./components/AuthRequired"
 
-import "./server"
+// Only load MirageJS mock server in development
+if (import.meta.env.DEV) {
+  import("./server")
+}
 
 function App() {
   /**
