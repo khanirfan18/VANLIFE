@@ -1,6 +1,7 @@
 {
-  "name": "Scrim-s04skm3",
-  "description": "https://scrimba.com/frontend-path-c0j/~014f",
+  "name": "vanlife",
+  "description": "A React app for browsing and renting camper vans",
+  "type": "module",
   "scripts": {
     "start": "vite",
     "dev": "vite",
