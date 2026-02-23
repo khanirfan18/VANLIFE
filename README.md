@@ -1,31 +1,51 @@
-# VanLife
+# 🚐 VanLife  
 
-A full-stack React application for browsing and renting camper vans. Hosts can manage their van listings, track income, and view reviews through a dedicated dashboard.
+A **BaaS-powered React application** for browsing and renting camper vans. Hosts can manage their van listings, track income, and view reviews through a dedicated dashboard.
 
-## Features
+---
 
-- **Browse Vans** — Filter and explore available vans by type (simple, luxury, rugged)
-- **Van Details** — View pricing, descriptions, and photos for each van
-- **Host Dashboard** — Manage listings, view earnings, and monitor reviews
-- **Authentication** — Login system with protected host routes
-- **Responsive Design** — Works across desktop and mobile devices
+## ✨ Features
 
-## Tech Stack
+- 🚐 **Browse Vans** — Filter and explore available vans by type (simple, luxury, rugged)  
+- 📄 **Van Details** — View pricing, descriptions, and photos for each van  
+- 📊 **Host Dashboard** — Manage listings, view earnings, and monitor reviews  
+- 🔐 **Authentication** — Login system with protected host routes  
+- 📱 **Responsive Design** — Works across desktop and mobile devices  
 
-- **React** with React Router v6 (nested routes, loaders, outlets)
-- **MirageJS** for API mocking
-- **Vite** for fast development and builds
+---
 
-## Getting Started
+## 🛠 Tech Stack
+
+<p align="left">
+  <img src="https://skillicons.dev/icons?i=react" height="40" alt="React" />
+  <img src="https://skillicons.dev/icons?i=vite" height="40" alt="Vite" />
+  <img src="https://skillicons.dev/icons?i=js" height="40" alt="JavaScript" />
+</p>
+
+- **React** — UI Library  
+- **React Router v6** — Nested routes, loaders, outlets  
+- **MirageJS** — API mocking  
+- **Vite** — Fast dev server & build tool  
+- **BaaS Architecture** — Backend handled via backend-as-a-service approach  
+
+---
+
+## 🚀 Getting Started
 
 ```bash
 npm install
 npm run dev
 ```
 
-The app will be available at `http://localhost:5173`.
+The app will be available at:
 
-## Project Structure
+```
+http://localhost:5173
+```
+
+---
+
+## 📁 Project Structure
 
 ```
 ├── api.js                  # API utility functions
@@ -41,12 +61,16 @@ The app will be available at `http://localhost:5173`.
 └── assets/images/          # Static images
 ```
 
-## Scripts
+---
+
+## 📜 Scripts
 
 | Command           | Description              |
-| ----------------- | ------------------------ |
+|------------------|--------------------------|
 | `npm run dev`     | Start development server |
 | `npm run build`   | Production build         |
 | `npm run preview` | Preview production build |
 
-Happy Coding!
+---
+
+⭐ Happy Coding!
