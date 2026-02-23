@@ -1,48 +1,47 @@
-# 🚐 VANLIFE  
+# 🚐 VanLife
 
-A **BaaS-powered React application** for browsing and renting camper vans. Hosts can manage their van listings, track income, and view reviews through a dedicated dashboard.
+A modern **BaaS-powered camper van rental platform** built with React.  
+Users can browse and filter vans, while hosts manage listings, income, and reviews through a protected dashboard.
 
 ---
 
-## ✨ Features
+## 🔗 Demo Access
 
-- 🚐 **Browse Vans** — Filter and explore available vans by type (simple, luxury, rugged)  
-- 📄 **Van Details** — View pricing, descriptions, and photos for each van  
-- 📊 **Host Dashboard** — Manage listings, view earnings, and monitor reviews  
-- 🔐 **Authentication** — Login system with protected host routes  
-- 📱 **Responsive Design** — Works across desktop and mobile devices  
+**Email:** `b@b.com`  
+**Password:** `p123`
 
 ---
 
 ## 🛠 Tech Stack
 
 <p align="left">
-  <img src="https://skillicons.dev/icons?i=react" height="40" alt="React" />
-  <img src="https://skillicons.dev/icons?i=vite" height="40" alt="Vite" />
-  <img src="https://skillicons.dev/icons?i=js" height="40" alt="JavaScript" />
-  <img src="https://skillicons.dev/icons?i=firebase" height="40" alt="Firebase" />
+  <img src="https://skillicons.dev/icons?i=react" height="42" />
+  <img src="https://skillicons.dev/icons?i=vite" height="42" />
+  <img src="https://skillicons.dev/icons?i=js" height="42" />
+  <img src="https://skillicons.dev/icons?i=firebase" height="42" />
+  <img src="https://github.com/user-attachments/assets/419bff88-2039-411f-96dc-107c74a65189" height="42" />
 </p>
-
-<p align="left">
-  <img src="https://avatars.githubusercontent.com/u/3631187?s=200&v=4" height="40" alt="MirageJS" />
-</p>
-
-- **React** — UI Library  
-- **React Router v6** — Nested routes, loaders, outlets  
-- **Firebase (BaaS)** — Authentication & backend services  
-- **MirageJS** — API mocking during development  
-- **Vite** — Fast dev server & build tool  
 
 ---
 
-## 🚀 Getting Started
+## ⚡ Key Features
+
+- Advanced filtering by van type  
+- Dynamic nested routing with protected host dashboard  
+- Authentication with Firebase  
+- Mock API layer using MirageJS  
+- Fully responsive layout  
+
+---
+
+## 🚀 Run Locally
 
 ```bash
 npm install
 npm run dev
 ```
 
-The app will be available at:
+App runs at:
 
 ```
 http://localhost:5173
@@ -50,33 +49,13 @@ http://localhost:5173
 
 ---
 
-## 📁 Project Structure
+## 📂 Architecture Overview
 
 ```
-├── api.js                  # API utility functions
-├── server.js               # MirageJS mock server
-├── firebase.js             # Firebase configuration
-├── index.jsx               # App entry with routes
-├── components/             # Shared components (Header, Footer, Layout)
-├── pages/
-│   ├── Home.jsx
-│   ├── About.jsx
-│   ├── Login.jsx
-│   ├── Vans/               # Public van browsing
-│   └── Host/               # Host dashboard & van management
-└── assets/images/          # Static images
+api.js
+server.js
+firebase.js
+index.jsx
+components/
+pages/
 ```
-
----
-
-## 📜 Scripts
-
-| Command           | Description              |
-|------------------|--------------------------|
-| `npm run dev`     | Start development server |
-| `npm run build`   | Production build         |
-| `npm run preview` | Preview production build |
-
----
-
-⭐ Happy Coding!
