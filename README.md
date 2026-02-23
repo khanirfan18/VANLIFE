@@ -1,4 +1,4 @@
-# 🚐 VanLife
+# 🚐 VANLIFE
 
 A modern **BaaS-powered camper van rental platform** built with React.  
 Users can browse and filter vans, while hosts manage listings, income, and reviews through a protected dashboard.
