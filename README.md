@@ -1,4 +1,4 @@
-# 🚐 VanLife  
+# 🚐 VANLIFE  
 
 A **BaaS-powered React application** for browsing and renting camper vans. Hosts can manage their van listings, track income, and view reviews through a dedicated dashboard.
 
@@ -20,13 +20,18 @@ A **BaaS-powered React application** for browsing and renting camper vans. Hosts
   <img src="https://skillicons.dev/icons?i=react" height="40" alt="React" />
   <img src="https://skillicons.dev/icons?i=vite" height="40" alt="Vite" />
   <img src="https://skillicons.dev/icons?i=js" height="40" alt="JavaScript" />
+  <img src="https://skillicons.dev/icons?i=firebase" height="40" alt="Firebase" />
+</p>
+
+<p align="left">
+  <img src="https://avatars.githubusercontent.com/u/3631187?s=200&v=4" height="40" alt="MirageJS" />
 </p>
 
 - **React** — UI Library  
 - **React Router v6** — Nested routes, loaders, outlets  
-- **MirageJS** — API mocking  
+- **Firebase (BaaS)** — Authentication & backend services  
+- **MirageJS** — API mocking during development  
 - **Vite** — Fast dev server & build tool  
-- **BaaS Architecture** — Backend handled via backend-as-a-service approach  
 
 ---
 
@@ -50,6 +55,7 @@ http://localhost:5173
 ```
 ├── api.js                  # API utility functions
 ├── server.js               # MirageJS mock server
+├── firebase.js             # Firebase configuration
 ├── index.jsx               # App entry with routes
 ├── components/             # Shared components (Header, Footer, Layout)
 ├── pages/
