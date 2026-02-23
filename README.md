@@ -1,6 +1,6 @@
 # VanLife
 
-A full-stack React application for browsing and renting camper vans. Hosts can manage their van listings, track income, and view reviews through a dedicated dashboard.
+A React-based BaaS (Backend as a Service) application for browsing and renting camper vans. Hosts can manage their van listings, track income, and view reviews through a dedicated dashboard.
 
 ## Features
 
@@ -12,9 +12,17 @@ A full-stack React application for browsing and renting camper vans. Hosts can m
 
 ## Tech Stack
 
-- **React** with React Router v6 (nested routes, loaders, outlets)
-- **MirageJS** for API mocking
-- **Vite** for fast development and builds
+- **React 18** — UI library
+- **React Router v6** — Nested routes, loaders, outlets
+- **Firebase Firestore** — Database (BaaS)
+- **MirageJS** — API mocking for development
+- **Vite** — Build tool and dev server
+
+## Login Credentials
+
+| Email       | Password |
+| ----------- | -------- |
+| `b@b.com`   | `p123`   |
 
 ## Getting Started
 
@@ -25,22 +33,6 @@ npm run dev
 
 The app will be available at `http://localhost:5173`.
 
-## Project Structure
-
-```
-├── api.js                  # API utility functions
-├── server.js               # MirageJS mock server
-├── index.jsx               # App entry with routes
-├── components/             # Shared components (Header, Footer, Layout)
-├── pages/
-│   ├── Home.jsx
-│   ├── About.jsx
-│   ├── Login.jsx
-│   ├── Vans/               # Public van browsing
-│   └── Host/               # Host dashboard & van management
-└── assets/images/          # Static images
-```
-
 ## Scripts
 
 | Command           | Description              |
@@ -48,5 +40,3 @@ The app will be available at `http://localhost:5173`.
 | `npm run dev`     | Start development server |
 | `npm run build`   | Production build         |
 | `npm run preview` | Preview production build |
-
-Happy Coding!
