@@ -1,8 +1,81 @@
-# Getting Started
-Install the dependencies and run the project
-```
+<div align="center">
+
+# 🚐 VanLife
+
+**A modern van rental marketplace built with React**
+
+[![React](https://img.shields.io/badge/React-18.2.0-61DAFB?style=flat-square&logo=react&logoColor=white)](https://reactjs.org/)
+[![React Router](https://img.shields.io/badge/React_Router-6.4.3-CA4245?style=flat-square&logo=react-router&logoColor=white)](https://reactrouter.com/)
+[![Firebase](https://img.shields.io/badge/Firebase-Firestore-FFCA28?style=flat-square&logo=firebase&logoColor=black)](https://firebase.google.com/)
+[![Vite](https://img.shields.io/badge/Vite-Latest-646CFF?style=flat-square&logo=vite&logoColor=white)](https://vitejs.dev/)
+[![MirageJS](https://img.shields.io/badge/MirageJS-0.1.46-1E8449?style=flat-square)](https://miragejs.com/)
+
+[Features](#-features) • [Tech Stack](#-tech-stack) • [Getting Started](#-getting-started) • [Project Structure](#-project-structure)
+
+</div>
+
+---
+
+## 📖 About
+
+VanLife is a React-based van rental marketplace with BaaS (Backend-as-a-Service) integration. Users can browse available vans, filter by category, and view detailed listings. Van owners (hosts) have access to a protected dashboard to manage their listings, track income, and monitor reviews.
+
+This project showcases advanced React patterns including nested routing, protected routes, search parameters, and BaaS integration with Firebase Firestore.
+
+---
+
+## ✨ Features
+
+**For Travelers:**
+- Browse all available vans with filtering (Simple, Luxury, Rugged)
+- View detailed van information with pricing
+- Persistent search state across navigation
+
+**For Hosts (Protected):**
+- Dashboard with earnings overview and review scores
+- Income tracking with transaction history
+- Van management with tabbed navigation (Details, Pricing, Photos)
+- Review monitoring system
+
+**Core:**
+- Authentication with protected routes
+- Nested layouts with React Router v6
+- Real-time data from Firebase Firestore
+- Mock API server with MirageJS for development
+
+---
+
+## 🛠 Tech Stack
+
+| Category | Technology |
+|----------|------------|
+| **Frontend** | React 18, React Router 6, React Icons |
+| **Database** | Firebase Firestore |
+| **Mock Server** | MirageJS |
+| **Build Tool** | Vite |
+| **Styling** | Vanilla CSS |
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Node.js 16+
+- npm or yarn
+
+### Installation
+
+```bash
+# Clone the repository
+git clone https://github.com/yourusername/vanlife.git
+cd vanlife
+
+# Install dependencies
 npm install
-npm start
+
+# Start development server
+npm run dev
 ```
 
 Head over to https://vitejs.dev/ to learn more about configuring vite
