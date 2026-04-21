@@ -212,10 +212,8 @@ footer {
 }
 
 .van-list {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    /* See bottom of file for responsive grid overrides */
     justify-items: center;
-    gap: 34px;
     margin-top: 57px;
 }
 
@@ -310,11 +308,16 @@ i[class*="van-type-"] {
     display: flex;
     flex-direction: column;
     color: #161616;
+    max-width: 800px;
+    margin-inline: auto;
 }
 
 .van-detail img {
     border-radius: 5px;
     margin-block: 47px;
+    width: 100%;
+    max-height: 500px;
+    object-fit: cover;
 }
 
 .van-detail h2 {
@@ -379,12 +382,15 @@ i[class*="van-type-"] {
     background-color: white;
     margin-bottom: 15px;
     padding: 18px 24px;
+    gap: 17px;
 }
 
 .host-van-single > img {
     height: 70px;
+    width: 70px;
+    object-fit: cover;
     border-radius: 5px;
-    margin-right: 17px;
+    margin-right: 0;
 }
 
 .host-van-info {
@@ -410,12 +416,16 @@ i[class*="van-type-"] {
 .host-van-detail {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
 .host-van-detail > img {
     height: 160px;
+    width: 160px;
+    object-fit: cover;
     border-radius: 5px;
-    margin-right: 20px;
+    margin-right: 0;
 }
 
 .host-van-detail-info-text > h3 {
@@ -739,4 +749,247 @@ img.graph {
 .host-reviews .review-star {
     color: #ff8c38;
     margin-right: 5px;
+}
+
+/* MOBILE RESPONSIVENESS OVERRIDES & DESKTOP ADJUSTMENTS */
+
+/* Main Containers & Max Widths for Desktop */
+.site-wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+main {
+    margin-bottom: auto;
+    width: 100%;
+    margin-inline: auto;
+    flex: 1;
+    padding-inline: 20px;
+}
+
+@media (min-width: 1024px) {
+    main {
+        max-width: 1200px; /* Constrain content but keep centered */
+        padding-inline: 0;
+    }
+}
+
+header {
+    width: 100%;
+    padding-inline: 26px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+    background-color: #fff7ed;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+@media (min-width: 1024px) {
+    header > nav, header > .site-logo, header > .login-link {
+        /* Keep header items aligned with the main container but the background full-width */
+    }
+}
+
+@media (min-width: 768px) {
+    header a, header .site-logo {
+        font-size: 1.1rem;
+    }
+    .home-container {
+        border-radius: 12px;
+        margin: 20px;
+        min-height: 60vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 60px 40px;
+    }
+    .home-container a {
+        max-width: 400px;
+    }
+}
+
+/* Base Typography & Layout */
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: #333;
+    overflow-x: hidden;
+}
+
+/* Beautiful Buttons */
+.link-button, .van-type, .home-container a, .login-form > button {
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+}
+
+.link-button:hover, .home-container a:hover, .login-form > button:hover:not(:disabled) {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+/* Cards & Images */
+.van-tile img, .host-van-single, .host-van-detail-layout-container, .host-income .transaction {
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    background-color: #ffffff;
+    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.van-tile:hover img {
+    transform: scale(1.03);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.15);
+}
+.van-tile {
+    overflow: hidden;
+    border-radius: 12px;
+    width: 100%;
+}
+
+.host-van-single:hover {
+    transform: translateX(5px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+/* Grids for Responsiveness */
+.van-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 40px;
+    margin-top: 40px;
+    padding-bottom: 60px;
+    align-items: start;
+}
+
+@media (max-width: 600px) {
+    .van-list {
+        grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+    }
+    header {
+        flex-wrap: wrap;
+        height: auto;
+        padding-block: 20px;
+        gap: 15px;
+    }
+    nav {
+        width: 100%;
+        justify-content: space-between;
+    }
+    .home-container h1 {
+        font-size: 1.8rem;
+    }
+    .host-dashboard-earnings, .host-dashboard-reviews {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+    .host-income .transaction {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+}
+
+/* General Container Scaling for Mobile & Desktop */
+.site-wrapper {
+    width: 100%;
+}
+
+body {
+    background-color: #fff7ed; 
+}
+
+/* Typography refinements */
+h1, h2, h3, h4, h5 {
+    letter-spacing: -0.025em;
+}
+
+/* Forms */
+.login-form > input {
+    border-radius: 8px !important;
+    border: 1px solid #e5e7eb;
+    margin-bottom: 12px;
+    transition: border-color 0.2s ease, box-shadow 0.2s;
+}
+
+.login-form > input:focus {
+    border-color: #ff8c38;
+    box-shadow: 0 0 0 3px rgba(255, 140, 56, 0.3);
+}
+
+/* Mobile Media Queries */
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        justify-content: center;
+        gap: 15px;
+        height: auto;
+        padding-block: 20px;
+    }
+    
+    header .site-logo {
+        margin-right: 0;
+        font-size: 30px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .home-container {
+        padding: 60px 23px;
+        text-align: center;
+    }
+
+    .home-container h1 {
+        font-size: 2rem;
+        line-height: 1.2;
+    }
+
+    .van-list-filter-buttons {
+        justify-content: center;
+        gap: 10px;
+    }
+    
+    .van-list-filter-buttons > a {
+        margin-right: 0;
+    }
+
+    .host-dashboard-earnings {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+    
+    .host-dashboard-vans > .top {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+    
+    .host-van-detail {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .host-van-detail > img {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    
+    .host-van-detail-nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        margin-bottom: 15px;
+    }
+
+    .host-van-detail-nav a, .host-van-detail-nav a:first-of-type {
+        margin-left: 0;
+        padding: 5px 10px;
+    }
 }
