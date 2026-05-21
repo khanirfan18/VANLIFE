@@ -4,7 +4,7 @@ A modern **BaaS-powered camper van rental platform** built with React.
 Users can browse and filter vans, while hosts manage listings, income, and reviews through a protected dashboard.
 
 ---
-<img width="1857" height="1009" alt="Screenshot from 2026-05-21 12-45-48" src="https://github.com/user-attachments/assets/16b61aa0-360e-42fe-b580-62c961aaea05" />
+<img width="1488" height="1011" alt="Screenshot from 2026-05-21 13-11-02" src="https://github.com/user-attachments/assets/7c53c0a9-157a-4d72-9a9d-aadec4269395" />
 ---
 
 ## 🔗 Demo Access
